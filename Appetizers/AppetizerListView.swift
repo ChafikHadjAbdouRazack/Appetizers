@@ -8,11 +8,20 @@
 import SwiftUI
 
 struct AppetizerListView: View {
+    
+    @StateObject var viewModel = AppetizerListViewModel()
+    
     var body: some View {
         NavigationView {
-            Text("AppetizerListView").navigationTitle("🍟 Appetizer")
+            List(viewModel.appetizers){ appetizer in
+                AppetizerListCell(appetizer: appetizer)
+            }.navigationTitle("🍟 Appetizer")
+        }.onAppear{
+            viewModel.getAppetizers()
         }
     }
+    
+ 
 }
 
 #Preview {
