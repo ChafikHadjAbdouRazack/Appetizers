@@ -9,7 +9,9 @@ import SwiftUI
 
 struct AppetizerListView: View {
     var body: some View {
-        Text("AppetizerListView")
+        NavigationView {
+            Text("AppetizerListView").navigationTitle("🍟 Appetizer")
+        }
     }
 }
 
