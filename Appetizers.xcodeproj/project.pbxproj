@@ -75,10 +75,10 @@
 		F402478C2D37D4E0007216D0 = {
 			isa = PBXGroup;
 			children = (
-				F40247972D37D4E0007216D0 /* Appetizers */,
 				F40247A82D37D4E2007216D0 /* AppetizersTests */,
 				F40247B22D37D4E2007216D0 /* AppetizersUITests */,
 				F40247962D37D4E0007216D0 /* Products */,
+				F40247972D37D4E0007216D0 /* Appetizers */,
 			);
 			sourceTree = "<group>";
 		};
